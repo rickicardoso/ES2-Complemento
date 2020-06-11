@@ -1,4 +1,4 @@
-def dockeruser = "40404040"
+def dockeruser = "rc"
 def imagename = "wordpress-with-java:5.4.1"
 def container = "apache2"
 node {
