@@ -1,5 +1,5 @@
 def dockeruser = "40404040"
-def imagename = "ubuntu:16"
+def imagename = "wordpress-with-java:5.4.1"
 def container = "apache2"
 node {
    echo 'Building Apache Docker Image'
@@ -8,7 +8,7 @@ stage('Git Checkout') {
     git 'https://github.com/jvpreis/ESII'
     }
     
-stage('Build Docker Imagae'){
+stage('Build Docker Image'){
      powershell "docker build -t  ${imagename} ."
     }
     
